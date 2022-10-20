@@ -1,3 +1,5 @@
-module github.com/manujelko/vanilla-go-service
+module github.com/manujelko/building-go-microservices
 
 go 1.19
+
+require github.com/gorilla/mux v1.8.0

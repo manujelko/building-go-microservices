@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/manujelko/building-go-microservices/data"
+	"github.com/manujelko/building-go-microservices/pkg/data"
 )
 
 func (p *Products) UpdateProduct(rw http.ResponseWriter, r *http.Request) {

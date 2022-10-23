@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/manujelko/building-go-microservices/data"
+	"github.com/manujelko/building-go-microservices/pkg/data"
 )
 
 func (p *Products) AddProduct(rw http.ResponseWriter, r *http.Request) {

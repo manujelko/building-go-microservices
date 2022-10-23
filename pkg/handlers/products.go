@@ -20,7 +20,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/manujelko/building-go-microservices/data"
+	"github.com/manujelko/building-go-microservices/pkg/data"
+	currencypb "github.com/manujelko/go-grpc-microservices/pkg/protobufs/currency"
 )
 
 // A list of products returns in the response
@@ -43,11 +44,12 @@ type productIDParameterWrapper struct {
 }
 
 type Products struct {
-	l *log.Logger
+	l  *log.Logger
+	cc currencypb.CurrencyClient
 }
 
-func NewProducts(l *log.Logger) *Products {
-	return &Products{l}
+func NewProducts(l *log.Logger, cc currencypb.CurrencyClient) *Products {
+	return &Products{l, cc}
 }
 
 type KeyProduct struct{}

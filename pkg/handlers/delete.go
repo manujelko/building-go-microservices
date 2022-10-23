@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/manujelko/building-go-microservices/data"
+	"github.com/manujelko/building-go-microservices/pkg/data"
 )
 
 // swagger:meta DELETE /products/{id} products deleteProduct
